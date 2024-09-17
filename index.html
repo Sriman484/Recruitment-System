@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruitment System Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><p><h1>RECRUITMENT SYSTEM LOGIN</h1></p></center>
+  <div class="container">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'PersonalDetails')">Personal Details</button>
+      <button class="tablinks" onclick="openTab(event, 'ProfessionalDetails')">Professional Details</button>
+    </div>
+    <div id="PersonalDetails" class="tabcontent">
+      <h2>Personal Details</h2>
+      <form action="/Personal-Details" method="POST">
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="bloodGroup">Blood Group</label>
+            <input type="text" id="bloodGroup" name="bloodGroup" required>
+          </div>
+          <div class="input-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" required>
+          </div>
+          <div class="input-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="input-group">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender" required>
+          </div>
+          <div class="input-group">
+            <label for="martialStatus">Martial Status</label>
+            <input type="text" id="martialStatus" name="martialStatus" required>
+          </div>
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <div id="ProfessionalDetails" class="tabcontent">
+      <h2>Professional Details</h2>
+      <form action="/Professional-Details" method="POST">
+          <div class="input-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+          </div>
+          <div class="input-group">
+            <label for="experience">Experience in Years</label>
+            <input type="text" id="experience" name="experience" required>
+          </div>
+          <div class="input-group">
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume" required>
+          </div>
+          <div class="input-group">
+            <label for="qualification">Enter Qualification</label>
+            <input type="text" id="qualification" name="qualification" required>
+          </div>
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
